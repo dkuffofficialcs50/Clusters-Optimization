@@ -2,21 +2,21 @@
 library(cluster)
 
 #Read in prepared wine.20068785
-load("~/Downloads/wine.20068785.RData")
-summary(wine.20068785$fixed.acidity)
-summary(wine.20068785$volatile.acidity)
-summary(wine.20068785$citric.acid)
-summary(wine.20068785$residual.sugar)
-summary(wine.20068785$chlorides)
-summary(wine.20068785$free.sulphur.dioxide)
-summary(wine.20068785$total.sulphur.dioxide)
-summary(wine.20068785$density)
-summary(wine.20068785$pH)
-summary(wine.20068785$sulphates)
-summary(wine.20068785$alcohol)
+load("~/Downloads/wine.dt.RData")
+summary(wine.dt$fixed.acidity)
+summary(wine.dt$volatile.acidity)
+summary(wine.dt$citric.acid)
+summary(wine.dt$residual.sugar)
+summary(wine.dt$chlorides)
+summary(wine.dt$free.sulphur.dioxide)
+summary(wine.dt$total.sulphur.dioxide)
+summary(wine.dt$density)
+summary(wine.dt5$pH)
+summary(wine.dt$sulphates)
+summary(wine.dt$alcohol)
 
 #Create dataframe with only complete cases
-df<-wine.20068785[complete.cases(wine.20068785),]
+df<-wine.20068785[complete.cases(wine.dt),]
 
 #create distance matrix
 df.dist<-daisy(df,metric="gower")
