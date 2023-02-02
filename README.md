@@ -19,7 +19,7 @@ Density (Low/Medium/High)
 pH
 Sulphates (g(potassium sulphate)/dm3)
 Alcohol (vol.%)
-##############################################################################
+##########################
 #################
 Learning Outcomes
 #################
